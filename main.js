@@ -16,7 +16,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadURL(process.env.NODE_ENV === 'production' ? __dirname + '/web/index.html' : 'http://localhost:9528')
+  app.isPackaged ? mainWindow.loadFile('../web/index.html') : mainWindow.loadURL('http://localhost:9528')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
