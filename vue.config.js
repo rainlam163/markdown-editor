@@ -1,3 +1,6 @@
 module.exports = {
-    outputDir: 'dist/win-unpacked/web'
+    outputDir: 'dist/win-unpacked/web',
+    devServer: {
+        port: '9528'
+    }
 }
